@@ -1,14 +1,10 @@
 class Solution {
   List<int> getConcatenation(List<int> nums) {
-    int length=nums.length;
-
-    List<int>ans=List.filled(length*2,0);
-
-    for(int i=0;i<length;i++){
+    List<int> ans=List.filled(nums.length*2,0);
+    for(int i=0;i<nums.length;i++){
         ans[i]=nums[i];
-        ans[i+length]=nums[i];
+        ans[i+nums.length]=nums[i];
     }
-
-     return ans;
+    return ans;
   }
 }
