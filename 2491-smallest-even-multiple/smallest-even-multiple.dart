@@ -1,9 +1,8 @@
 class Solution {
   int smallestEvenMultiple(int n) {
-    if(n%2==0){
+    if(n%2==0)
         return n;
-    }else{
+    else
         return n*2;
-    }
   }
 }
